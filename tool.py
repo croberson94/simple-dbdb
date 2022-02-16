@@ -19,8 +19,8 @@ def main(argv):
 		if verb == 'get':
 			sys.stdout.write(db[key]) # GET VALUE
 		elif verb == 'set':
-			db[key] = value
-			db.commit()
+			db[key] = value # SET VALUE
+			db.commit() # COMMIT
 		else:
 			db[key] = value
 			db.commit()
